@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="tehtava_a" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lomake tehtava</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <h1>Lomakkeen validointi HTML5</h1>
+
+        <form action="lomakeGET.php" method="get">
+            Etunimi: <input type="text" name="etunimi" required><br>
+            Sukunimi: <input type="text" name="sukunimi" required><br>
+            Sähköpostiosoite: <input type="email" name="email" pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required placeholder="example@something.com"><br>
+            Puhelinnumero: <input type="tel" name ="puhelin" size="10" pattern="^\+[0-9]*$" required placeholder="+358..."><br>
+            Osoite: <input type="text" name="osoite" ><br>
+            Postinumero: <input type="text" name ="postinumero" pattern="^[0-9]{5}$"><br>
+            Salasana: <input type="password" name="salasana" required><br>
+
+            <input id ="nappi" type="submit" value="Lähetä">
+
+        </form>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
