@@ -19,7 +19,7 @@
         <form action="lomakeGET.php" method="get">
             Etunimi: <input type="text" name="etunimi" required><br>
             Sukunimi: <input type="text" name="sukunimi" required><br>
-            Sähköpostiosoite: <input type="email" name="email" pattern="[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required placeholder="example@something.com"><br>
+            Sähköpostiosoite: <input type="email" name="email" pattern="^[A-Z0-9_\+-]+(\.[A-Z0-9_\+-]+)*@[A-Z0-9_-]+(\.[A-Z0-9_-]+)*\.[A-Z]{2,}$" required placeholder="example@something.com"><br>
             Puhelinnumero: <input type="tel" name ="puhelin" size="10" pattern="^\+[0-9]*$" required placeholder="+358..."><br>
             Osoite: <input type="text" name="osoite" ><br>
             Postinumero: <input type="text" name ="postinumero" pattern="^[0-9]{5}$"><br>

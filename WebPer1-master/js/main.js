@@ -50,7 +50,7 @@ const checkPattern = (el) => {
   //uudemmissa attributen nimellä
   console.log(el.pattern);
   const pat = el.getAttribute('pattern');
-  const lauseke = new RegExp(pat);
+  const lauseke = new RegExp(pat, 'i');
   if (!lauseke.exec(el.value)) {
      console.log('no');
      el.setAttribute('style', 'border: 1px solid yellow');
